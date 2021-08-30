@@ -14,6 +14,26 @@ h1{
 	box-sizing: border-box;
 }
 
+.img-links{
+	max-width:100%;
+    height:auto;
+}
+
+.im img{
+	display: block;
+    margin: 5px 20px;
+    padding: 5px;
+	justify-items: center;
+	margin: auto;
+	block-size: 20%;
+}
+
+.im a:hover img{
+	animation-name: med-img;
+	animation-duration: 0.5s;
+	block-size: 25%;
+}
+
 nav{
 	display: flex;
 	justify-content: space-around;
@@ -44,6 +64,12 @@ nav{
 	text-spacing: 3px;
 	font-weight: bold;
 	font-size: 14px;
+}
+
+.nav-links a:hover{
+	animation-name: Tabs;
+	animation-duration: 0.5s;
+	font-size: 16px;
 }
 
 .burger{
@@ -101,6 +127,23 @@ nav{
 	to{
 		opacity: 1;
 		transform: transformX(0px);
+	}
+}
+
+@keyframes Tabs{
+	from{
+		font-size: 14px;
+	}
+	to{
+		font-size: 16px;
+	}
+}
+
+@keyframes med-img{
+	from{
+		block-size: 20%;
+	} to {
+		block-size: 25%;
 	}
 }
 
