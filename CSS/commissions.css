@@ -5,7 +5,13 @@ h1{
 }
 
 h2{
-	color: #ffffff;
+	color: #ff4d4d;
+	text-align: center;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h3{
+	color: #ff4d4d;
 	text-align: center;
 	font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -17,17 +23,24 @@ p{
 	font-size: 20px;
 }
 
-.quotes{
+.Portions{
 	display: grid;
 	grid-gap: 2vw;
 }
 
-.quote{
+.Portion{
 	border: 2px solid black;
 	border-radius: 25px;
 	padding: .5em;
 	margin: auto;
 
+}
+
+.portion li{
+	text-align: center;
+	font-family: 'Bai Jamjuree', sans-serif;
+	color: #ffffff;
+	list-style: none;
 }
 
 body{
