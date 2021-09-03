@@ -14,17 +14,20 @@ h1{
 	box-sizing: border-box;
 }
 
-.img-links{
-	max-width:100%;
-    height:auto;
+.im {
+	border: 2px solid black;
+	border-radius: 25px;
+	width: 40%;
+	margin: auto;
 }
 
 .im img{
 	display: block;
-    margin: 5px 20px;
     padding: 5px;
 	justify-items: center;
 	margin: auto;
+	animation-name: img;
+	animation-duration: 0.5s;
 	block-size: 20%;
 }
 
@@ -64,6 +67,8 @@ nav{
 	text-spacing: 3px;
 	font-weight: bold;
 	font-size: 14px;
+	animation-name: Tabs-load;
+	animation-duration: 0.5s;
 }
 
 .nav-links a:hover{
@@ -130,12 +135,29 @@ nav{
 	}
 }
 
+@keyframes Tabs-load{
+	from{
+		font-size: 16px;
+	}
+	to{
+		font-size: 14px;
+	}
+}
+
 @keyframes Tabs{
 	from{
 		font-size: 14px;
 	}
 	to{
 		font-size: 16px;
+	}
+}
+
+@keyframes img{
+	from{
+		block-size: 25%;
+	} to {
+		block-size: 20%;
 	}
 }
 
