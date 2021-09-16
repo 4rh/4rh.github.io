@@ -87,6 +87,27 @@ nav{
 	font-size: 16px;
 }
 
+.things li{
+	list-style: none;
+	text-align: center;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+.things a{
+	color: #ffffff;
+	text-decoration: none;
+	text-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	animation-name: Tabs-load;
+	animation-duration: 0.5s;
+}
+
+.things a:hover{
+	animation-name: Tabs;
+	animation-duration: 0.5s;
+	font-size: 16px;
+}
+
 .burger{
 	display: none;
 }
